@@ -10,7 +10,7 @@ if (params.containsKey("release_test")) {
 }
 
 def ciRepeUrl = "https://github.com/hi-rustin/ci.git"
-def ciRepoBranch = "main"
+def ciRepoBranch = "test"
 
 def specStr = "+refs/pull/${ghprbPullId}/*:refs/remotes/origin/pr/${ghprbPullId}/*"
 if (ghprbPullId == null || ghprbPullId == "") {
